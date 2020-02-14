@@ -56,5 +56,11 @@ module.exports = {
         icon: `src/images/favicon.png`,
       },
     },
+    {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        apiToken: `${process.env.DATOCMS_KEY}`,
+      },
+    },
   ],
 }
