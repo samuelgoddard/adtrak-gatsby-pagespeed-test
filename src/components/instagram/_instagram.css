@@ -1,0 +1,58 @@
+.insta {
+  @apply relative;
+  
+  &:after {
+    @apply absolute bottom-0 right-0 w-full h-64;
+    content: " ";
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  }
+
+  @screen lg {
+    &:after {
+      @apply absolute top-0 right-0 bottom-0 w-1/2 h-full -mr-10;;
+      background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    }
+  }
+}
+
+.insta__img {
+  max-height: 190px;
+  width: 100% !important;
+
+  picture, img {
+    width: 100% !important;
+  }
+
+  @screen md {
+    max-height: 230px;
+  }
+
+  @screen lg {
+    max-height: 170px;
+  }
+
+  @screen xl {
+    max-height: 200px;
+  }
+  
+  @screen 2xl {
+    max-height: 240px;
+  }
+}
+
+.insta__object {
+  @screen xl {
+    &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+      .insta__img {
+        @apply ml-10;
+      }
+    }
+
+    &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+      .insta__img {
+        @apply -ml-10;
+      }
+    }
+  }
+}

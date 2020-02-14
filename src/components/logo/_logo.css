@@ -1,0 +1,15 @@
+.logo {
+  @apply w-32;
+  
+  @screen md {
+    @apply w-40;
+  }
+}
+
+.logo--small {
+  @apply w-24;
+
+  @screen md {
+    @apply w-24;
+  }
+}

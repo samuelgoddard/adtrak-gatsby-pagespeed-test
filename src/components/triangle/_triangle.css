@@ -1,0 +1,26 @@
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 0 9px 15px;
+  border-color: transparent transparent transparent currentColor;
+}
+
+/*! purgecss start ignore */
+.triangle__small {
+  border-width: 5px 0px 5px 9px;
+  border-color: transparent transparent transparent currentColor;
+}
+
+.triangle__down {
+  border-width: 15px 9px 0px 9px;
+  border-color: currentColor transparent transparent transparent;
+}
+
+.triangle__small.triangle__white {
+  border-color: transparent transparent transparent #FFFFFF;
+}
+.triangle__down.triangle__white {
+  border-color: #FFFFFF transparent transparent transparent;
+}
+/*! purgecss end ignore */

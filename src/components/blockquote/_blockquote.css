@@ -1,0 +1,23 @@
+blockquote {
+  @apply py-4 ml-0;
+
+  p {
+    @apply text-primary font-display font-bold text-xl pl-10 border-l-2 border-primary;
+
+    @screen lg {
+      @apply text-2xl;
+    }
+  }
+}
+
+/*! purgecss start ignore */
+.blockquote__testimonial {
+  p {
+    @apply text-secondary-dark font-sans font-light border-none pl-0 text-center;
+  }
+
+  footer {
+    @apply text-primary text-center;
+  }
+}
+/*! purgecss end ignore */

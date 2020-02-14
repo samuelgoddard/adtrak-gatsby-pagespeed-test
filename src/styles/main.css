@@ -1,0 +1,84 @@
+/* Local Fonts */
+@import './partials/_fonts.css';
+
+/* Tailwind Base + Components */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Custom Partials */
+@import './partials/_container.css';
+@import './partials/_typography.css';
+@import '../components/button/_button.css';
+@import '../components/headings/_headings.css';
+@import '../components/logo/_logo.css';
+@import '../components/triangle/_triangle.css';
+@import '../components/blockquote/_blockquote.css';
+@import '../components/instagram/_instagram.css';
+
+/* Tailwind Utils */
+@import 'tailwindcss/utilities';
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+  
+  @screen md {
+    grid-gap: 30px;
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  @screen lg {
+    grid-gap: 35px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @screen xl {
+    grid-gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @screen 2xl {
+    grid-gap: 40px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.embla {
+  width: 100%;
+}
+
+.embla__wrap {
+  position: relative;
+}
+
+.embla__viewport {
+  width: 100%;
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  will-change: transform;
+}
+
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+}
+
+.embla__slide--project {
+  flex: 0 0 100%;
+  padding-left: 0px;
+}
+
+
+/*! purgecss start ignore */
+.embed-container {
+  position: relative; padding-bottom: 45%; height: 0; overflow: hidden;;
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+}
+/*! purgecss end ignore */

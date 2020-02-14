@@ -1,0 +1,82 @@
+.btn {
+  @apply 
+    inline-block
+    bg-secondary
+    text-white
+    transition
+    py-3
+    px-5
+    font-display
+    border-secondary
+    border-2;
+
+  &:hover, &:focus {
+    @apply bg-secondary-dark;
+  }
+}
+
+.btn[disabled] {
+  @apply opacity-25 cursor-wait;
+}
+
+.btn--primary {
+  @apply 
+    bg-primary border-primary;
+
+  &:hover, &:focus {
+    @apply bg-primary-dark;
+  }
+}
+
+.btn--secondary-light {
+  @apply 
+    bg-secondary-light border-secondary-light text-secondary-dark;
+
+  &:hover, &:focus {
+    @apply bg-secondary border-secondary text-secondary-light;
+  }
+}
+
+.btn--secondary-dark {
+  @apply 
+    bg-secondary-dark border-secondary-dark text-white;
+
+  &:hover, &:focus {
+    @apply bg-secondary border-secondary text-secondary-light;
+  }
+}
+
+.btn--outline {
+  @apply
+    bg-transparent
+    text-secondary-dark
+    border-secondary-dark border-2;
+
+  &:hover, &:focus {
+    @apply border-secondary text-white;
+  }
+}
+
+.btn--outline-grey {
+  @apply
+    font-sans
+    bg-transparent
+    text-secondary-dark
+    border-grey border;
+
+  &:hover, &:focus {
+    @apply border-primary bg-transparent;
+  }
+}
+
+.btn--small {
+  @apply py-2 px-3;
+}
+
+.btn--smaller {
+  @apply py-1 px-2;
+}
+
+.btn--reset {
+  @apply bg-transparent text-base !important;
+}
