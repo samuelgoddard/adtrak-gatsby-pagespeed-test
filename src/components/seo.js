@@ -140,6 +140,8 @@ const SEO = ({ pathname, titleOverride, descriptionOverride, pathnameOverride, i
 
       <link rel="dns-prefetch" href="https://browser-update.org" />
       <link rel="dns-prefetch" href="https://connect.facebook.net" />
+      
+      <meta name="robots" content="noindex" />
 
       <script type="application/ld+json">{JSON.stringify(schemaOrgWebPage)}</script>
 
