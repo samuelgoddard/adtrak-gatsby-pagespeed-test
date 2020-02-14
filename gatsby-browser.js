@@ -22,14 +22,3 @@ export const shouldUpdateScroll = ({
   }
   return false
 }
-
-const insertJS = () => {
-  const s = document.createElement(`script`)
-  s.type = `text/javascript`
-  s.src = "//217641.tctm.co/t.js"
-  document.getElementsByTagName(`head`)[0].appendChild(s)
-}
-
-export const onInitialClientRender = () => {
-  insertJS()
-}

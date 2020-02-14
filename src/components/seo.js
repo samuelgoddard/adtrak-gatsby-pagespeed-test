@@ -137,9 +137,6 @@ const SEO = ({ pathname, titleOverride, descriptionOverride, pathnameOverride, i
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content={twitterAccount} />
-
-      <link rel="dns-prefetch" href="https://browser-update.org" />
-      <link rel="dns-prefetch" href="https://connect.facebook.net" />
       
       <meta name="robots" content="noindex" />
 
