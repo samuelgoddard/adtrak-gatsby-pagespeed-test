@@ -1,6 +1,6 @@
 import React from "react"
 import SEO from "../components/seo"
-import ShapeGrid from "../components/shapeGrid/shapeGrid"
+// import ShapeGrid from "../components/shapeGrid/shapeGrid"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import Shape from "../components/shape/shape"
@@ -22,9 +22,9 @@ const IndexPage = ({ data: { page }, location }) => {
       <section>
         <div className="container container--3xl">
           <div className="relative mb-16 md:mb-24 lg:mb-32 flex flex-wrap">
-            <div className="flex-1 mb-12 lg:mb-0">
+            {/* <div className="flex-1 mb-12 lg:mb-0">
               <ShapeGrid />
-            </div>
+            </div> */}
 
             <div className="w-full lg:w-7/12 xl:w-5/12 text-center mb-16 lg:mb-0">
               <div className="flex flex-wrap items-center h-full justify-center">
@@ -47,9 +47,9 @@ const IndexPage = ({ data: { page }, location }) => {
               </div>
             </div>
 
-            <div className="flex-1">
+            {/* <div className="flex-1">
               <ShapeGrid />
-            </div>
+            </div> */}
           </div>
         </div>
 
